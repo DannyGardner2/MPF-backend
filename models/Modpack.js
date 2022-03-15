@@ -1,6 +1,6 @@
 const mongoose = require('../db/connection');
 
-const modPack = new mongoose.Schema(
+const ModPack = new mongoose.Schema(
     {
         title: String,
         mcversion: String,
@@ -10,4 +10,4 @@ const modPack = new mongoose.Schema(
     }
 );
 
-module.exports = mongoose.model('ModPack', modPack);
+module.exports = mongoose.model('ModPack', ModPack);
